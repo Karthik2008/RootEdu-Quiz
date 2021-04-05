@@ -1,0 +1,16 @@
+{% extends "quiz/base.html" %}
+{% block content %}
+    <h1 style="font-family: Courier;color:darkblue">Here You Have Few Questions About Linux</h1>
+    <br>
+    <h2 id = "Q1">Q1) What is the command to list all the files?</h2>
+    <div id = "choices Q1" class = "container" style="padding-left: 50px;padding-top: 20px;">
+        <button id = "Q1ans" class="btn btn-outline-info" style = "border-radius: 25px;height:50px; width:180px;font-size:24px;font-family:courier;display:list-item;">ls</button>
+        <br>
+        <button id = "Q1wrong" class="btn btn-outline-primary" style = "border-radius: 25px;height:50px; width:180px;font-size:24px;font-family:courier;display:list-item;">list</button>
+        <br>
+        <button id = "Q1wrong" class="btn btn-outline-warning" style = "border-radius: 25px;height:50px; width:270px;font-size:24px;font-family:courier;display:list-item;">all of the above</button>
+        <br>
+        <button id = "Q1wrong" class="btn btn-outline-danger" style = "border-radius: 25px;height:50px; width:270px;font-size:24px;font-family:courier;display:list-item;">none of the above</button>
+    </div>
+
+{% endblock %}
