@@ -12,3 +12,9 @@ def quizlist(request):
 
 def linuxquiz(request):
     return render(request, 'quiz/linux-quiz.html')
+
+def correct(request):
+    return render(request, 'quiz/correct.html')
+
+def wrong(request):
+    return render(request, 'quiz/wrong.html')

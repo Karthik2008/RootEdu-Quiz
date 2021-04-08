@@ -84,3 +84,151 @@ body {
     font-size: 2.5rem;
   }
 
+#Q101{
+  border-radius: 25px;
+  height:50px; 
+  width:270px;
+  font-size:24px;
+  font-family:courier;
+  display:list-item;
+}
+
+#Q102{
+  border-radius: 25px;
+  height:50px; 
+  width:270px;
+  font-size:24px;
+  font-family:courier;
+  display:list-item;
+}
+
+#Q103{
+  border-radius: 25px;
+  height:50px; 
+  width:270px;
+  font-size:24px;
+  font-family:courier;
+  display:list-item;
+}
+
+#Q1ans{
+  border-radius: 25px;
+  height:50px; 
+  width:270px;
+  font-size:24px;
+  font-family:courier;
+  display:list-item;
+}
+
+#Q201{
+  border-radius: 25px;
+  height:50px; 
+  width:400px;
+  font-size:24px;
+  font-family:courier;
+  display:list-item;
+}
+
+#Q202{
+  border-radius: 25px;
+  height:50px; 
+  width:400px;
+  font-size:24px;
+  font-family:courier;
+  display:list-item;
+}
+
+#Q203{
+  border-radius: 25px;
+  height:50px; 
+  width:400px;
+  font-size:24px;
+  font-family:courier;
+  display:list-item;
+}
+
+#Q2ans{
+  border-radius: 25px;
+  height:50px; 
+  width:400px;
+  font-size:24px;
+  font-family:courier;
+  display:list-item;
+}
+
+#Q301{
+  border-radius: 25px;
+  height:50px; 
+  width:270px;
+  font-size:24px;
+  font-family:courier;
+  display:list-item;
+}
+
+#Q302{
+  border-radius: 25px;
+  height:50px; 
+  width:270px;
+  font-size:24px;
+  font-family:courier;
+  display:list-item;
+}
+
+#Q303{
+  border-radius: 25px;
+  height:50px; 
+  width:270px;
+  font-size:24px;
+  font-family:courier;
+  display:list-item;
+}
+
+#Q3ans{
+  border-radius: 25px;
+  height:50px; 
+  width:270px;
+  font-size:24px;
+  font-family:courier;
+  display:list-item;
+}
+
+#Q401{
+  border-radius: 25px;
+  height:50px; 
+  width:270px;
+  font-size:24px;
+  font-family:courier;
+  display:list-item;
+}
+
+#Q402{
+  border-radius: 25px;
+  height:50px; 
+  width:270px;
+  font-size:24px;
+  font-family:courier;
+  display:list-item;
+}
+
+#Q403{
+  border-radius: 25px;
+  height:50px; 
+  width:270px;
+  font-size:24px;
+  font-family:courier;
+  display:list-item;
+}
+
+#Q4ans{
+  border-radius: 25px;
+  height:50px; 
+  width:270px;
+  font-size:24px;
+  font-family:courier;
+  display:list-item;
+}
+
+#score, #scoreTitle {
+  font-family:courier;
+  padding-left: 50px;
+}

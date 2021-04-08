@@ -1,16 +1,377 @@
 {% extends "quiz/base.html" %}
 {% block content %}
+    <script>
+        var points = 0;
+        var submitEnable = 0;
+        var Q1 = false;
+        var Q101 = false;
+        var Q102 = false;
+        var Q103 = false;
+
+        var Q2 = false;
+        var Q201 = false;
+        var Q202 = false;
+        var Q203 = false;
+
+        var Q3 = false;
+        var Q301 = false;
+        var Q302 = false;
+        var Q303 = false;
+
+        var Q4 = false;
+        var Q401 = false;
+        var Q402 = false;
+        var Q403 = false;
+        
+
+        function addPoint1() {
+            document.getElementById("Q1ans").disabled = true;
+            document.getElementById("Q101").disabled = true;
+            document.getElementById("Q102").disabled = true;
+            document.getElementById("Q103").disabled = true;
+            points += 1;
+            submitEnable += 1;
+            
+        }
+
+        function disable1() {
+            document.getElementById("Q1ans").disabled = true;
+            document.getElementById("Q101").disabled = true;
+            document.getElementById("Q102").disabled = true;
+            document.getElementById("Q103").disabled = true;
+            submitEnable += 1;
+            
+        }
+
+        function addPoint2() {
+            document.getElementById("Q2ans").disabled = true;
+            document.getElementById("Q201").disabled = true;
+            document.getElementById("Q202").disabled = true;
+            document.getElementById("Q203").disabled = true;
+            points += 1;
+            submitEnable += 1;
+            
+        }
+
+        function disable2() {
+            document.getElementById("Q2ans").disabled = true;
+            document.getElementById("Q201").disabled = true;
+            document.getElementById("Q202").disabled = true;
+            document.getElementById("Q203").disabled = true;
+            submitEnable += 1;
+            
+        }
+
+        function addPoint3() {
+            document.getElementById("Q3ans").disabled = true;
+            document.getElementById("Q301").disabled = true;
+            document.getElementById("Q302").disabled = true;
+            document.getElementById("Q303").disabled = true;
+            points += 1;
+            submitEnable += 1;
+            
+        }
+
+        function disable3() {
+            document.getElementById("Q3ans").disabled = true;
+            document.getElementById("Q301").disabled = true;
+            document.getElementById("Q302").disabled = true;
+            document.getElementById("Q303").disabled = true;
+            submitEnable += 1;
+            
+        }
+
+        function addPoint4() {
+            document.getElementById("Q4ans").disabled = true;
+            document.getElementById("Q401").disabled = true;
+            document.getElementById("Q402").disabled = true;
+            document.getElementById("Q403").disabled = true;
+            points += 1;
+            submitEnable += 1;
+            
+        }
+
+        function disable4() {
+            document.getElementById("Q4ans").disabled = true;
+            document.getElementById("Q401").disabled = true;
+            document.getElementById("Q402").disabled = true;
+            document.getElementById("Q403").disabled = true;
+            submitEnable += 1;
+            
+        }
+
+
+        function Q1correct() {
+            Q1 = true;
+            document.getElementById("Q1ans").className = "btn btn-info";
+        }
+
+        function Q1wrong1() {
+            Q101 = true;
+            document.getElementById("Q101").className = "btn btn-primary";
+        }
+
+        function Q1wrong2() {
+            Q102 = true;
+            document.getElementById("Q102").className = "btn btn-warning";
+        }
+
+        function Q1wrong3() {
+            Q103 = true;
+            document.getElementById("Q103").className = "btn btn-danger";
+        }
+
+        function Q2correct() {
+            Q2 = true;
+            document.getElementById("Q2ans").className = "btn btn-primary";
+        }
+
+        function Q2wrong1() {
+            Q201 = true;
+            document.getElementById("Q201").className = "btn btn-info";            
+        }
+
+        function Q2wrong2() {
+            Q202 = true;
+            document.getElementById("Q202").className = "btn btn-warning";
+        }
+
+        function Q2wrong3() {
+            Q203 = true;
+            document.getElementById("Q203").className = "btn btn-danger";
+        }
+
+        function Q3correct() {
+            Q3 = true;
+            document.getElementById("Q3ans").className = "btn btn-danger";
+        }
+
+        function Q3wrong1() {
+            Q301 = true;
+            document.getElementById("Q301").className = "btn btn-info";            
+        }
+
+        function Q3wrong2() {
+            Q302 = true;
+            document.getElementById("Q302").className = "btn btn-primary";
+        }
+
+        function Q3wrong3() {
+            Q303 = true;
+            document.getElementById("Q303").className = "btn btn-warning";
+        }
+
+        function Q4correct() {
+            Q4 = true;
+            document.getElementById("Q4ans").className = "btn btn-warning";
+        }
+
+        function Q4wrong1() {
+            Q401 = true;
+            document.getElementById("Q401").className = "btn btn-info";            
+        }
+
+        function Q4wrong2() {
+            Q402 = true;
+            document.getElementById("Q402").className = "btn btn-primary";
+        }
+
+        function Q4wrong3() {
+            Q403 = true;
+            document.getElementById("Q403").className = "btn btn-danger";
+        }
+
+
+        function submit() {
+            if (Q1 == true) {
+                document.getElementById("Q1ans").style.backgroundColor = "green";
+                document.getElementById("Q1ans").style.color = "black";
+
+                document.getElementById("score").innerHTML = points;
+            }
+
+            if (Q101 == true) {
+                document.getElementById("Q1ans").style.backgroundColor = "green";
+                document.getElementById("Q1ans").style.color = "black";
+
+                document.getElementById("Q101").style.backgroundColor = "red";
+                document.getElementById("Q101").style.color = "black";
+            }
+
+            if (Q102 == true) {
+                document.getElementById("Q1ans").style.backgroundColor = "green";
+                document.getElementById("Q1ans").style.color = "black";
+
+                document.getElementById("Q102").style.backgroundColor = "red";
+                document.getElementById("Q102").style.color = "black";
+            }
+
+            if (Q103 == true) {
+                document.getElementById("Q1ans").style.backgroundColor = "green";
+                document.getElementById("Q1ans").style.color = "black";
+
+                document.getElementById("Q103").style.backgroundColor = "red";
+                document.getElementById("Q103").style.color = "black";
+            }
+
+            if (Q2 == true) {
+                document.getElementById("Q2ans").style.backgroundColor = "green";
+                document.getElementById("Q2ans").style.color = "black";
+
+                document.getElementById("score").innerHTML = points;
+            }
+
+            if (Q201 == true) {
+                document.getElementById("Q2ans").style.backgroundColor = "green";
+                document.getElementById("Q2ans").style.color = "black";
+
+                document.getElementById("Q201").style.backgroundColor = "red";
+                document.getElementById("Q201").style.color = "black";
+            }
+
+            if (Q202 == true) {
+                document.getElementById("Q2ans").style.backgroundColor = "green";
+                document.getElementById("Q2ans").style.color = "black";
+
+                document.getElementById("Q202").style.backgroundColor = "red";
+                document.getElementById("Q202").style.color = "black";
+            }
+
+            if (Q203 == true) {
+                document.getElementById("Q2ans").style.backgroundColor = "green";
+                document.getElementById("Q2ans").style.color = "black";
+
+                document.getElementById("Q203").style.backgroundColor = "red";
+                document.getElementById("Q203").style.color = "black";
+            }
+
+            if (Q3 == true) {
+                document.getElementById("Q3ans").style.backgroundColor = "green";
+                document.getElementById("Q3ans").style.color = "black";
+
+                document.getElementById("score").innerHTML = points;
+            }
+
+            if (Q301 == true) {
+                document.getElementById("Q3ans").style.backgroundColor = "green";
+                document.getElementById("Q3ans").style.color = "black";
+
+                document.getElementById("Q301").style.backgroundColor = "red";
+                document.getElementById("Q301").style.color = "black";
+            }
+
+            if (Q302 == true) {
+                document.getElementById("Q3ans").style.backgroundColor = "green";
+                document.getElementById("Q3ans").style.color = "black";
+
+                document.getElementById("Q302").style.backgroundColor = "red";
+                document.getElementById("Q302").style.color = "black";
+            }
+
+            if (Q303 == true) {
+                document.getElementById("Q3ans").style.backgroundColor = "green";
+                document.getElementById("Q3ans").style.color = "black";
+
+                document.getElementById("Q303").style.backgroundColor = "red";
+                document.getElementById("Q303").style.color = "black";
+            }
+
+            if (Q4 == true) {
+                document.getElementById("Q4ans").style.backgroundColor = "green";
+                document.getElementById("Q4ans").style.color = "black";
+
+                document.getElementById("score").innerHTML = points;
+            }
+
+            if (Q401 == true) {
+                document.getElementById("Q4ans").style.backgroundColor = "green";
+                document.getElementById("Q4ans").style.color = "black";
+
+                document.getElementById("Q401").style.backgroundColor = "red";
+                document.getElementById("Q401").style.color = "black";
+            }
+
+            if (Q402 == true) {
+                document.getElementById("Q4ans").style.backgroundColor = "green";
+                document.getElementById("Q4ans").style.color = "black";
+
+                document.getElementById("Q402").style.backgroundColor = "red";
+                document.getElementById("Q402").style.color = "black";
+            }
+
+            if (Q403 == true) {
+                document.getElementById("Q4ans").style.backgroundColor = "green";
+                document.getElementById("Q4ans").style.color = "black";
+
+                document.getElementById("Q403").style.backgroundColor = "red";
+                document.getElementById("Q403").style.color = "black";
+            }
+
+        }
+
+
+    </script>
+    
     <h1 style="font-family: Courier;color:darkblue">Here You Have Few Questions About Linux</h1>
     <br>
     <h2 id = "Q1">Q1) What is the command to list all the files?</h2>
     <div id = "choices Q1" class = "container" style="padding-left: 50px;padding-top: 20px;">
-        <button id = "Q1ans" class="btn btn-outline-info" style = "border-radius: 25px;height:50px; width:180px;font-size:24px;font-family:courier;display:list-item;">ls</button>
+        <button id = "Q1ans" class="btn btn-outline-info" onclick="addPoint1(); Q1correct(); check1()">ls</button>
         <br>
-        <button id = "Q1wrong" class="btn btn-outline-primary" style = "border-radius: 25px;height:50px; width:180px;font-size:24px;font-family:courier;display:list-item;">list</button>
+        <button id = "Q101" class="btn btn-outline-primary" onclick="disable1(); Q1wrong1(); check1()">list</button>
         <br>
-        <button id = "Q1wrong" class="btn btn-outline-warning" style = "border-radius: 25px;height:50px; width:270px;font-size:24px;font-family:courier;display:list-item;">all of the above</button>
+        <button id = "Q102" class="btn btn-outline-warning" onclick="disable1(); Q1wrong2(); check1()">all of the above</button>
         <br>
-        <button id = "Q1wrong" class="btn btn-outline-danger" style = "border-radius: 25px;height:50px; width:270px;font-size:24px;font-family:courier;display:list-item;">none of the above</button>
+        <button id = "Q103" class="btn btn-outline-danger" onclick="disable1(); Q1wrong3(); check1()">none of the above</button>
+        <br>
     </div>
+    <br>
+    <h2 id = "Q2">Q2) What is the full form of 'pwd'?</h2>
+    <div id = "choices Q2" class = "container" style="padding-left: 50px;padding-top: 20px;">
+        <button id = "Q201" class="btn btn-outline-info" onclick="disable2(); Q2wrong1(); check2()">Present Working Directory</button>
+        <br>
+        <button id = "Q2ans" class="btn btn-outline-primary" onclick="addPoint2(); Q2correct(); check2()">Print Working Directory</button>
+        <br>
+        <button id = "Q202" class="btn btn-outline-warning" onclick="disable2(); Q2wrong2(); check2()">Public Works Department</button>
+        <br>
+        <button id = "Q203" class="btn btn-outline-danger" onclick="disable2(); Q2wrong3();check2()">none of the above</button>
+        <br>
+    </div>
+
+    <br>
+
+    <h2 id = "Q3">Q3) How to remove a file?</h2>
+    <div id = "choices Q3" class = "container" style="padding-left: 50px;padding-top: 20px;">
+        <button id = "Q301" class="btn btn-outline-info" onclick="disable3(); Q3wrong1(); check3()">remove</button>
+        <br>
+        <button id = "Q302" class="btn btn-outline-primary" onclick="disable3(); Q3wrong2(); check3()">remove-file</button>
+        <br>
+        <button id = "Q303" class="btn btn-outline-warning" onclick="disable3(); Q3wrong3(); check3()">rmdir</button>
+        <br>
+        <button id = "Q3ans" class="btn btn-outline-danger" onclick="addPoint3(); Q3correct();check3()">rm</button>
+        <br>
+    </div>
+
+    <h2 id = "Q4">Q4) How to remove a file?</h2>
+    <div id = "choices Q4" class = "container" style="padding-left: 50px;padding-top: 20px;">
+        <button id = "Q401" class="btn btn-outline-info" onclick="disable4(); Q4wrong1(); check4()">remove</button>
+        <br>
+        <button id = "Q402" class="btn btn-outline-primary" onclick="disable4(); Q4wrong2(); check4()">remove-file</button>
+        <br>
+        <button id = "Q4ans" class="btn btn-outline-warning" onclick="addPoint4(); Q4correct(); check4()">rmdir</button>
+        <br>
+        <button id = "Q403" class="btn btn-outline-danger" onclick="disable4(); Q4wrong3();check4()">rm</button>
+        <br>
+    </div>
+     
+        <div class="row">
+            <button id="submit" class ="btn btn-primary" onclick="submit()">Submit</button>
+            <div class="row">
+                <h1 id = "scoreTitle">Score: </h1>
+                <h1 id = "score">0</h1>
+            </div>
+        </div>
+        
+        
 
 {% endblock %}
